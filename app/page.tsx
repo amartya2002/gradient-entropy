@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container"
+import { Clients } from "@/components/sections/clients"
 import { HomepageHero } from "@/components/sections/homepage-hero"
 
 
@@ -13,18 +14,17 @@ export default function Home() {
         <Container className="pt-[6.4rem]">
           
             <HomepageHero />
-            <HomepageHero />
-            <HomepageHero />
-            <HomepageHero />
-            <HomepageHero />
-            <HomepageHero />
-            <HomepageHero />
+            
 
           
 
         </Container>
 
       </div>
+
+      <Container>
+        <Clients />
+      </Container>
 
 
 
