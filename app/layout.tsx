@@ -1,5 +1,8 @@
 import './globals.css'
+import { Header } from "../components/header";
+
 import type { Metadata } from 'next'
+
 import { Nunito } from 'next/font/google'
 
 const nunito = Nunito({ subsets: ['latin'] })
@@ -16,7 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body>
+        <div className={nunito.className}>
+        <Header />
+
+          <main className="bg-page-gradient pt-navigation-height">
+            {children}
+          </main>
+
+
+        </div>
+
+      </body>
     </html>
   )
 }

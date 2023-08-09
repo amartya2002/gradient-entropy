@@ -13,7 +13,7 @@ export const HeroTitle = ({ children, className }: HeroElementProps) => {
   return (
     <h1
       className={classNames(
-        "font-semibold text-gray-700 my-6 text-5xl md:text-6xl",
+        "text-gradient my-6 text-6xl md:text-8xl ",
         className
       )}
     >
@@ -26,7 +26,7 @@ export const HeroSubtitle = ({ children, className }: HeroElementProps) => {
   return (
     <p
       className={classNames(
-        "mb-12 text-lg text-gray-600 md:text-xl",
+        "mb-12 text-lg text-primary-text md:text-xl",
         className
       )}
     >
@@ -36,5 +36,5 @@ export const HeroSubtitle = ({ children, className }: HeroElementProps) => {
 };
 
 export const Hero = ({ children }: HeroProps) => {
-  return <div className="text-center ">{children}</div>;
+  return <div className="text-ceter">{children}</div>;
 };
