@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./button";
 import { Container } from "./Container";
 import { HamburgerIcon } from "./icons/hamburger";
+
 import classNames from "classnames";
 
 export const Header = () => {
@@ -31,7 +32,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <p className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          Linear
         </Link>
 
         <div
@@ -42,7 +43,7 @@ export const Header = () => {
         >
           <nav
             className={classNames(
-              "fixed top-navigation-height left-0 h-[calc(100vh_-_var(--navigation-height))] w-full overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
+              "fixed top-navigation-height left-5 h-[calc(57vh_-_var(--navigation-height))] w-[90vw] mx-auto rounded-3xl overflow-auto bg-background transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
               hamburgerMenuIsOpen
                 ? "translate-x-0 opacity-100"
                 : "translate-x-[-100vw] opacity-0"
@@ -50,13 +51,13 @@ export const Header = () => {
           >
             <ul
               className={classNames(
-                "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none",
+                "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6 [&_li] ",
                 "ease-in [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
               <li>
-                <Link href="#">Features</Link>
+                <Link className="" href="#">Features</Link>
               </li>
               <li>
                 <Link href="#">Method</Link>
